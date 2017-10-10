@@ -57,7 +57,7 @@ with open('PigLatin.txt', 'r') as training:
             outs.append(element[1])
         outs = [word[0:len(word)-1] for word in outs]
         X = np.array([sequentialize(word, maxlen) for word in ins]) # training data (time series of letters)
-        XX = np.array([bag(word, maxlen) for word in ins]) # seconary training data (bags of letters)
+        XX = np.array([bag(word, maxlen) for word in ins]) # secondary training data (bags of letters)
         Y = np.array([sequentialize(word, maxlen) for word in outs]) # testing data (time series of letters)
 
 # train LSTM model (long short-term memory; a kind of recurrent neural net for learning from sequences)
