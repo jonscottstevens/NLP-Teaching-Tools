@@ -2,7 +2,6 @@
 This is mostly meant for fun---to see if we can get a neural network to learn Pig Latin from a small number of completely regular examples.  The accompanying data file, 'PigLatin.txt' gives just 65 training examples.
 """
 
-from __future__ import division
 import os
 import numpy as np
 
